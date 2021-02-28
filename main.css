@@ -8,7 +8,7 @@
 .main-header {
     margin: auto;
     padding-top: 2em;
-    padding-bottom: 12em;
+    padding-bottom: 10em;
 }
 
 .main-header h1 {
@@ -29,7 +29,7 @@
     padding: 1em;
     margin-right: 0;
     margin-left: auto;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     width: 80%;
 }
 
@@ -40,7 +40,7 @@
     width: 80%;
     margin-right: auto;
     margin-left: 0;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .content-three {
@@ -49,7 +49,7 @@
     padding: 1em;
     margin-right: 0;
     margin-left: auto;
-    margin-bottom: 15em;
+    margin-bottom: 12em;
     display: inline-block;
 }
 
@@ -85,12 +85,26 @@
 .emojicol {
     font-size: 5em;
     padding:1em;
+    flex: 1;
+    transition: 1s;
 }
 
 .emojicol:hover {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    flex: 10;
 } 
+
+.row {
+    display: flex;
+    transition: 1s;
+}
+
+.grid {
+    margin: auto;
+}
+
+
 
 
 /* .grid {
