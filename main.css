@@ -85,7 +85,7 @@
 .emojicol {
     font-size: 5em;
     padding:1em;
-    flex: 1;
+    /* flex: 1; < -- for emojicon-flex */
     transition: 1s;
     cursor: pointer;
 }
@@ -93,18 +93,31 @@
 .emojicol:hover {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    flex: 10;
+    /* flex: 10; < -- for emojicon-flex */
     
 } 
 
-.row {
+.grid {
+    border: 1px solid black;
+}
+
+.textbox {
+    border: 1px solid black;
+    
+}
+
+.story {
+    border: 1px solid blue;
+}
+
+/* .row { < -- for emojicon-flex
     display: flex;
     transition: 1s;
 }
 
 .grid {
     margin: auto;
-}
+} */
 
 
 
