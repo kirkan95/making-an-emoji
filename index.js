@@ -30,12 +30,15 @@
 // }
 
 $( document ).ready(function() {
-    $('.story').css('marginLeft', '25%')
-    function gridShift(){}
+    $('.textbox').css('display', 'none')
     $('.emojicol').click(function(){
-        $('.textbox').animate({left: "-50%"});
-        $('.grid').animate({left: "-50%"});
+        $('.textbox').css('display', 'block')
+        $('.textbox').animate({left: "-25%"});
+        $('.grid').animate({left: "-25%"});
         $('.grid').css('opacity', '0.2');
+    })
+    $('.pickupTruck').click(function(){
+        $('emojiText').text("Your text has been replaced!");
     })
 })   
 
