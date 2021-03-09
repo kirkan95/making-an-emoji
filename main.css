@@ -102,6 +102,12 @@
     width: 80%;
 }
 
+#emojiText {
+    font-family: Raleway;
+    font-size: 1.5em;
+}
+
+
 /* .row { < -- for emojicon-flex
     display: flex;
     transition: 1s;
