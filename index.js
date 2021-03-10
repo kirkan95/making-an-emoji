@@ -50,15 +50,7 @@ function initialize() {
         let thisEmoji = $(this);
         console.log(thisEmoji);
 
-        //choose jquery for this instead of js
         //if the emoji has an id of x then the span text (emojitext) should be replaced with x.string
-
-        //example -- to delete
-        if (thisEmoji[0].id === ("")) {
-            $("#emojiText").text()
-        }
-
-    
         if (thisEmoji[0].id === ("pickup-truck")) {
             $("#emojiText").text("You can thank Dwayne the Rock Johnson for the availability of the all-American vehicle on your keyboard. According to Eric Grenier of Ford, The Rock’s complaint about the lack of a pickup truck emoji spurred them into action, and after a $50,000 marketing push, the emoji was released in 2019. Previous versions looked very similar to the Ford F-150—on purpose, of course.  ")
         }
@@ -127,6 +119,9 @@ function initialize() {
         // this event. 
 
       $("#hidden-textbox").css("display", "block");
+      $("html, body").animate({
+        scrollTop: $("#wrapper").offset().top
+          }, 300);
       $("#hidden-textbox").animate({ left: "-25%" });
       $("#grid").animate({ left: "-25%" });
       $("#grid").css("opacity", "0.2");
@@ -137,9 +132,13 @@ function initialize() {
         $("#grid").animate({ left: "0%" });
         $("#grid").css("opacity", "1");
         $("#hidden-textbox").css("display", "none");
-    })
-}
+    });
 
+
+    $(".emojicol").on('click', function(e){
+        $('#').css('top', e.pageY);
+    });
+}
 
 // a little something about if statements
 function myFunction2() {
