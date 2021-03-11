@@ -99,7 +99,7 @@
 
 
 #story {
-    width: 80%;
+    width: 100%;
 }
 
 #emojiText {
@@ -108,7 +108,13 @@
 }
 
 #wrapper {
-    padding-top: 5em;
+    /* Adding this for fun */
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    right: 27%;
+    z-index: 100;
+    overflow: auto;
 }
 
 /* .row { < -- for emojicon-flex
